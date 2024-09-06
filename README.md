@@ -1,4 +1,4 @@
-# serverest_testing
+# andi_testing
 
 This repository contains my solution to a QA testing challenge.
 
