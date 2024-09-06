@@ -1,0 +1,42 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  api-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Configuração do Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '20.9.0'
+
+    - name: Instalação de Dependências (API)
+      run: npm install
+      working-directory: ./API
+
+    - name: Executar Testes de API
+      run: npm run cy:run
+      working-directory: ./API
+
+  ui-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Configuração do Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '20.9.0' 
+
+    - name: Instalação de Dependências (UI)
+      run: npm install
+      working-directory: ./WEB
+
+    - name: Executar Testes de UI
+      run: npm run cy:ui-regression
+      working-directory: ./WEB
