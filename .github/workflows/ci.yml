@@ -24,7 +24,7 @@ jobs:
       working-directory: ./API
 
     - name: Executar Testes de API
-      run: npm run cy:run
+      run: npm run cypress:run
       working-directory: ./API
 
     - name: Upload Mochawesome Report
