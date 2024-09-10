@@ -5,6 +5,7 @@ This repository contains my solution to a QA testing challenge.
 ## Solution
 
 I opted to utilize Cypress as the automation testing framework, JavaScript for scripting, and the Mochawesome report for generating test reports. 
+Also, I used https://serverest.dev/ for API testing and https://www.saucedemo.com for UI testing
 
 ## Prerequisites
 
