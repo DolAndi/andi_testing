@@ -6,8 +6,6 @@ This repository contains my solution to a QA testing challenge.
 
 I opted to utilize Cypress as the automation testing framework, JavaScript for scripting, and the Mochawesome report for generating test reports. 
 
-Additionally, there is a GitHub Actions pipeline in place, which could be scheduled to run daily, although currently, it triggers upon each commit.
-
 ## Prerequisites
 
 Before running the tests, make sure you have the following tools installed on your system:
@@ -19,7 +17,7 @@ Before running the tests, make sure you have the following tools installed on yo
 
 Clone the repository:
 ```bash
-git clone https://github.com/DolAndi/qa-test-task.git
+git clone https://github.com/DolAndi/andi_testing.git
 ```
 
 ### For UI Tests
